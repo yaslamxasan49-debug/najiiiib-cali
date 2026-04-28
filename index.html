@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Modernism</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+
+    <!-- Background decoration -->
+    <div class="bg-gradient"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">Corporate Modernism</div>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-profiles">
+                <img src="images/profile1.png" alt="Profile 1" class="profile-pic">
+                <img src="images/profile2.png" alt="Profile 2" class="profile-pic">
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero / About Us Section -->
+            <section id="about" class="about-section">
+                <div class="about-content">
+                    <h1>About Us</h1>
+                    <p>Who We Are - We create amazing digital experiences. We are a collective of designers and engineers dedicated to the art of Corporate Modernism.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-us.png" alt="Modern Conference Room">
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="services-section">
+                <h2>Our Precision Services</h2>
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <i class="ph-fill ph-pen-nib"></i>
+                        </div>
+                        <h3>Web Design</h3>
+                        <p>Crafting visual languages that communicate authority and elegance through grid-based precision and modern aesthetics.</p>
+                        <a href="#" class="explore-link">EXPLORE DESIGN <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <i class="ph-fill ph-code"></i>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Building robust, high-performance digital engines with clean code architecture and seamless user transitions.</p>
+                        <a href="#" class="explore-link">VIEW ARCHITECTURE <i class="ph ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <i class="ph-bold ph-trend-up"></i>
+                        </div>
+                        <h3>SEO</h3>
+                        <p>Strategic visibility optimization designed to position your brand at the forefront of digital industry leadership.</p>
+                        <a href="#" class="explore-link">GROW VISIBILITY <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="gallery-section">
+                <h2>Our Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="images/about-us.png" alt="Gallery Image 1">
+                    <img src="images/culture.png" alt="Gallery Image 2">
+                </div>
+            </section>
+
+            <!-- Culture Section -->
+            <section class="culture-section">
+                <div class="culture-card">
+                    <div class="culture-content">
+                        <span class="tag">OUR CULTURE</span>
+                        <h2>Built on Authority & Clarity</h2>
+                        <p>We believe that modern corporate design shouldn't be cold. It should be clear. Our philosophy centers on removing the noise so your message can resonate with precision.</p>
+                        <div class="culture-actions">
+                            <button class="btn btn-primary">MEET THE TEAM</button>
+                            <button class="btn btn-outline">OUR PROCESS</button>
+                        </div>
+                    </div>
+                    <div class="culture-image">
+                        <img src="images/culture.png" alt="Two business professionals shaking hands">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">Corporate Modernism</div>
+                <div class="copyright">© 2024 CORPORATE MODERNISM. PRECISION IN DESIGN.</div>
+            </div>
+            <div class="footer-links">
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERMS OF SERVICE</a>
+                <a href="#">HELP CENTER</a>
+                <a href="#">LINKEDIN</a>
+                <a href="#">INSTAGRAM</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
